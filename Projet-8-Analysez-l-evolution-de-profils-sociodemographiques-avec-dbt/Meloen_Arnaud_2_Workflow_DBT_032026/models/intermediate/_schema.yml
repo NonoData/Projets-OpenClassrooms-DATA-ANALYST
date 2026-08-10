@@ -1,0 +1,61 @@
+version: 2
+
+models:
+  - name: int_etudiants
+    description: "Modèle intermédiaire préparant les données étudiants."
+    columns:
+      - name: annee
+        description: "Année de début du parcours étudiant."
+      - name: age
+        description: "Tranche d'âge de l'étudiant nettoyée."
+      - name: region
+        description: "Région harmonisée pour correspondre aux référentiels INSEE."
+        tests:
+          - not_null
+      - name: sexe
+        description: "Genre de l'étudiant."
+        tests:
+          - not_null
+
+  - name: int_insee_2022_2025
+    description: "Modèle intermédiaire INSEE dépivoté et filtré."
+    columns:
+      - name: annee
+        description: "Année de la donnée INSEE."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [2022, 2023, 2024, 2025]
+      - name: region
+        description: "Région filtrée."
+        tests:
+          - not_null
+      - name: sexe
+        description: "Genre de la population d'après le découpage INSEE ('M' ou 'F')."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['M', 'F']
+      - name: age
+        description: "Tranche d'âge regroupée."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - '20-24 ans'
+                  - '25-29 ans'
+                  - '30-34 ans'
+                  - '35-39 ans'
+                  - '40-44 ans'
+                  - '45-49 ans'
+                  - '50-54 ans'
+                  - '55-59 ans'
+                  - '60 ans ou plus'
+           
+      - name: population
+        description: "Volume de population."
+        tests:
+          - not_null

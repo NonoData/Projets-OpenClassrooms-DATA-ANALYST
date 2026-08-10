@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_etudiants
+    description: "Table de staging nettoyée pour les étudiants."
+    columns:
+      - name: year_path_started
+        description: "Année de début du parcours étudiant."
+      - name: age_group
+        description: "Tranche d'âge de l'étudiant."
+      - name: region
+        description: "Région de l'étudiant."
+        tests:
+          - not_null
+      - name: gender
+        description: "Genre de l'étudiant."
+
+  - name: stg_insee_2022_2025
+    description: "Union des tables de population INSEE de 2022 à 2025."
+    columns:
+      - name: annee
+        description: "Année de la donnée INSEE."
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: [2022, 2023, 2024, 2025]
+      - name: region
+        description: "Région (issue de la colonne C1 de la source)."
+        tests:
+          - not_null

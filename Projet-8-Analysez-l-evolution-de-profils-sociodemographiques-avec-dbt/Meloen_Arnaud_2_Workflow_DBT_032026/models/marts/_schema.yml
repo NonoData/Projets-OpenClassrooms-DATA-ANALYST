@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: mart_population_etudiants
+    description: "Table de faits croisant la population INSEE et le nombre d'étudiants OpenClassrooms par année, région, sexe et tranche d'âge."
+    columns:
+      - name: annee
+        description: "Année d'observation."
+        tests:
+          - not_null
+
+      - name: region
+        description: "Région d'habitation / d'étude."
+        tests:
+          - not_null
+
+      - name: sexe
+        description: "Genre / Sexe de la tranche de population (ex: 'M', 'F')."
+        tests:
+          - not_null
+
+      - name: age
+        description: "Tranche d'âge observée."
+        tests:
+          - not_null
+
+      - name: population
+        description: "Volume de population totale estimé par l'INSEE."
+
+      - name: nb_etudiants_oc
+        description: "Nombre total d'étudiants OpenClassrooms comptabilisés sur ce croisement (0 si aucun)."
+        tests:
+          - not_null

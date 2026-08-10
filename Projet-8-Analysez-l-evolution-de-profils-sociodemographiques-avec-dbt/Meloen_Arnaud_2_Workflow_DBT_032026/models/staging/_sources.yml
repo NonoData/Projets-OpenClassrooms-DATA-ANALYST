@@ -1,0 +1,36 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: "Données brutes sources pour les analyses dbt"
+    database: P8_OPENCLASSROOMS
+    schema: RAW_DATA
+    tables:
+      - name: ETUDIANTS
+        description: "Données brutes relatives aux étudiants"
+        columns:
+          - name: USER_ID
+            description: "Identifiant technique unique de l'étudiant"
+          - name: PATH_CATEGORY_NAME
+            description: "Catégorie du parcours suivi (Data)"
+          - name: AGE_GROUP
+            description: "Classe d'âge au moment du début du parcours"
+          - name: GENDER
+            description: "Genre déclaré par l'étudiant (F/M ou vide)"
+          - name: REGION
+            description: "Région de résidence"
+          - name: YEAR_PATH_STARTED
+            description: "Année de début du parcours"
+
+
+      - name: POPULATION_INSEE_2022
+        description: "Données démographiques de l'INSEE pour l'année 2022"
+
+      - name: POPULATION_INSEE_2023
+        description: "Données démographiques de l'INSEE pour l'année 2023"
+
+      - name: POPULATION_INSEE_2024
+        description: "Données démographiques de l'INSEE pour l'année 2024"
+
+      - name: POPULATION_INSEE_2025
+        description: "Données démographiques de l'INSEE pour l'année 2025"
