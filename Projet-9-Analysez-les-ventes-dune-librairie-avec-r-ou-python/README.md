@@ -1,50 +1,54 @@
-# Analysis of Sales and Customer Behavior - Lapage Bookstore
+# Bilan des Ventes & Analyse Comportementale — Librairie Lapage
 
-## 📌 About the Project
-This project provides a comprehensive analysis of the online sales performance and customer purchasing behavior for the **Lapage Bookstore** since its launch, covering the period from **March 2021 to February 2023**[cite: 18]. 
-
-The primary aim of this study is to evaluate overall revenue trends, identify key customer segments, analyze product category popularity, and uncover actionable insights to guide future business strategies[cite: 18].
+## Présentation du Projet
+Ce projet consiste en une analyse exploratoire et statistique des performances de ventes en ligne de la **Librairie Lapage** depuis son ouverture[cite: 18]. L'objectif principal est d'analyser l'activité globale, d'évaluer la performance des produits vendus et de mieux comprendre les habitudes d'achat des clients selon leurs caractéristiques démographiques (âge, genre)[cite: 18].
 
 ---
 
-## 🎯 Key Objectives & Issues
-* **Sales Performance Tracking:** Analyze monthly turnover, transaction volume, and product movements over time[cite: 18].
-* **Customer Segmentation & Behavior:** Understand purchasing habits across age groups and genders, focusing on transaction frequency and average basket size[cite: 18].
-* **Product & Category Breakdown:** Determine revenue concentration across book categories and spot top/bottom performing items[cite: 18].
-* **Business Recommendations:** Address anomalies (such as sales drops) and propose data-backed strategies to improve customer retention and basket value[cite: 18].
+## Enjeux et Objectifs
+* **Évaluation de la performance globale :** Suivre l'évolution du chiffre d'affaires, du volume de transactions et du nombre de clients uniques au fil du temps[cite: 18].
+* **Analyse du catalogue produit :** Identifier les références clés (Top/Flop des ventes en chiffre d'affaires et en volume) ainsi que la répartition des ventes par catégorie[cite: 18].
+* **Segmentation et comportement client :** Comprendre l'impact du genre et de l'âge sur le panier moyen, la fréquence d'achat et la typologie de livres achetés[cite: 18].
+* **Prise de décision stratégique :** Proposer des préconisations concrètes pour optimiser la fidélisation, cibler la communication et redresser les tendances de ventes[cite: 18].
 
 ---
 
-## 📊 Dataset Overview
-The analysis is based on raw website extraction data combining three main tables[cite: 18]:
+## Jeux de Données Utilisés
+L'analyse s'appuie sur une extraction des données du site web de la librairie couvrant la période de **mars 2021 à février 2023**[cite: 18]. 
 
-1. **Customers (`customers`)**[cite: 18]
-   * **Scope:** 8,621 customer entries[cite: 18].
-   * **Attributes:** `client_id`, `sex`, `birth`[cite: 18].
-2. **Products (`products`)**[cite: 18]
-   * **Scope:** 3,286 book references[cite: 18].
-   * **Attributes:** `id_prod`, `price`, `categ`[cite: 18].
-3. **Transactions (`transactions`)**[cite: 18]
-   * **Scope:** 1,048,575 transaction records[cite: 18].
-   * **Attributes:** `id_prod`, `date`, `session_id`, `client_id`[cite: 18].
+Les données se divisent en trois tables principales[cite: 18] :
 
-> **Data Pipeline Note:** Merging these datasets yielded a consolidated dataset of 687,534 valid transaction lines[cite: 18]. A total of 4 B2B outlier accounts were excluded for statistical consistency[cite: 18].
+* **`customers`** (8 621 observations) : Informations sur les clients[cite: 18].
+  * `client_id` : Identifiant unique du client[cite: 18].
+  * `sex` : Sexe du client[cite: 18].
+  * `birth` : Année de naissance[cite: 18].
+* **`products`** (3 286 observations) : Catalogue des livres[cite: 18].
+  * `id_prod` : Identifiant unique du produit[cite: 18].
+  * `price` : Prix du livre[cite: 18].
+  * `categ` : Catégorie du produit (0, 1 ou 2)[cite: 18].
+* **`transactions`** (1 048 575 observations brutes / 361 041 valeurs manquantes traitées) : Historique des achats[cite: 18].
+  * `id_prod` : Identifiant du produit acheté[cite: 18].
+  * `date` : Date et heure de la transaction[cite: 18].
+  * `session_id` : Identifiant de la session d'achat[cite: 18].
+  * `client_id` : Identifiant de l'acheteur[cite: 18].
 
----
-
-## 🔍 Key Findings
-
-* **Revenue Distribution:** Book Categories 0 and 1 generate nearly 77% of total revenue[cite: 18].
-* **Revenue Inequality:** A Gini index of 0.398 demonstrates moderate revenue concentration among top buyers[cite: 18].
-* **Demographic Patterns:**
-  * **Younger Buyers (< 30 years):** Feature significantly higher average basket values but lower transaction frequency[cite: 18].
-  * **Mid-Aged Buyers (30–50 years):** Buy more frequently but spend less per transaction[cite: 18].
-  * **Category Preference:** Younger buyers prefer Category 2 books (average age: 22.8 years), whereas Category 1 appeals to older audiences (average age: 49.8 years)[cite: 18].
+> **Remarque sur la préparation des données :** Après nettoyage, gestion des valeurs manquantes et jointure des trois tables, le jeu de données final comprend **687 534 lignes**[cite: 18]. Lors du nettoyage, 21 clients et 21 produits non associés à des transactions ont été identifiés[cite: 18]. De plus, 4 clients BtoB aux volumes atypiques ont été exclus des analyses statistiques pour ne pas biaiser les résultats[cite: 18].
 
 ---
 
-## 💡 Strategic Recommendations
+## Principaux Constats
 
-* **Investigate Anomalies:** Conduct a detailed audit to determine the cause of the sudden drop in active clients and transactions in February 2023[cite: 18].
-* **Loyalty Programs for Young Adults (<30):** Implement targeted loyalty perks to increase purchase frequency[cite: 18].
-* **Upselling Strategies (30–50 Age Group):** Introduce personalized bundle recommendations to raise average order value[cite: 18].
+* **Évolution des Ventes :** Le chiffre d'affaires progresse de façon continue jusqu'au début de l'année 2022 avant de devenir plus instable, marqué par une chute nette en février 2023[cite: 18].
+* **Répartition par Catégorie :** Les catégories 0 et 1 représentent près de **77 % du chiffre d'affaires total**[cite: 18].
+* **Concentration du CA (Gini) :** L'indice de Gini s'élève à **0.398**, traduisant une concentration du chiffre d'affaires sur une partie des clients[cite: 18].
+* **Impact de l'Âge :**
+  * *Genre :* Peu de différences constatées dans la répartition des catégories achetées entre hommes et femmes[cite: 18].
+  * *Catégories :* La catégorie 2 touche un public jeune (moyenne de 22,8 ans), la catégorie 0 concerne les adultes (moyenne de 42,7 ans), et la catégorie 1 attire un public plus âgé (moyenne de 49,8 ans)[cite: 18].
+  * *Comportement :* Les moins de 30 ans présentent un panier moyen nettement plus élevé[cite: 18], tandis que la tranche 30–50 ans réalise des achats plus fréquents[cite: 18].
+
+---
+
+## Recommendations Strategiques
+1. **Investigation requise :** Identifier rapidement la cause exacte de la baisse brutale de clients, de transactions et de chiffre d'affaires observée en février 2023[cite: 18].
+2. **Fidélisation des < 30 ans :** Mettre en place un programme ciblé pour encourager cette tranche d'âge, qui a un panier moyen élevé, à acheter plus fréquemment[cite: 18].
+3. **Optimisation pour les 30–50 ans :** Développer des mécanismes de recommandation ou d'offres combinées pour inciter ce segment très actif à augmenter son panier moyen[cite: 18].
