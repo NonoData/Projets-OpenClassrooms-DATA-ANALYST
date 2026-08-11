@@ -4,7 +4,7 @@ Bienvenue sur le répertorie du projet de **Tableau de Bord de Pilotage de Proje
 
 Les différents tableaux de bord réalisés avec Power BI ont été créer pour répondre à la demande de réalisation d'un portefolio comprenant mon profil, une veille technologiqueet un diagramme de gantt.
 
-Les différents documents sont utilisés pour la page suivante : 
+Les différents documents sont utilisés pour la page suivante :  <a href="https://nonodata.github.io/">**Livrable**</a> 
 
 ---
 
