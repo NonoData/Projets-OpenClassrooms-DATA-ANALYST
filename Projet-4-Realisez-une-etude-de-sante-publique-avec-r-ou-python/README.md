@@ -1,7 +1,7 @@
 # Étude sur l'Alimentation et la Sous-Nutrition dans le Monde
 
 ## 📌 À propos du projet
-Ce projet est une **étude data analytique approfondie** de la situation alimentaire mondiale, réalisée par **Arnaud Meloen** à partir des données de la **FAO** (*Food and Agriculture Organization* / Organisation des Nations Unies pour l'alimentation et l'agriculture).
+Ce projet est une **étude data analytique approfondie** de la situation alimentaire mondiale à partir des données de la **FAO** (*Food and Agriculture Organization* / Organisation des Nations Unies pour l'alimentation et l'agriculture).
 
 L'objectif principal est de comprendre les mécanismes de la **sous-nutrition à l'échelle globale**, d'analyser la disponibilité des ressources alimentaires et d'étudier la répartition et l'utilisation des récoltes (notamment les céréales et le manioc) afin d'identifier les causes profondes de la faim dans le monde.
 
