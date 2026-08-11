@@ -12,7 +12,7 @@ L'objectif principal est de concevoir un **algorithme d'apprentissage automatiqu
 
 Dans le domaine de la lutte contre le faux-monnayage, toutes les erreurs de classification n'ont pas la même gravité  :
 * **Détecter un faux billet est la priorité absolue** : Un faux billet classé comme vrai (faux négatif) s'infiltre dans le système financier et cause un préjudice économique direct .
-* **L'enjeu clé** est donc de maximiser le **Rappel (Recall) sur la classe « Faux »** . On cherche à atteindre un score de recall proche de **1,00 (100 % de faux billets interceptés)**, quitte à rejeter temporairement quelques vrais billets à des fins de vérification manuelle .
+* **L'enjeu clé** est donc de maximiser le **Rappel (Recall) sur la classe « Faux »** . On cherche à atteindre un score de recall proche de **1,00 (100 % de faux billets interceptés)**, quitte à rejeter quelques vrais billets.
 
 ---
 
