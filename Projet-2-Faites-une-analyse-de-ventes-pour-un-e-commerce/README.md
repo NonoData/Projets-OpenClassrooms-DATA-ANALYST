@@ -40,5 +40,3 @@ Ce projet rassemble et analyse l'historique des ventes, des sessions de navigati
 ## 🚀 Que contient ce projet / Quels sont les résultats ?
 
 * **Livrables :** Un rapport d'analyse visuel comportant des graphiques temporels (évolution CA vs ventes), des bar charts empilés par catégorie produit, des graphiques de corrélation et des boxplots sur l'engagement client.
-* **Auteur du rapport :** Arnaud Meloen
-* **Statut :** 🟢 Analyse finalisée (Période sous étude : 03/2019 - 02/2020)
