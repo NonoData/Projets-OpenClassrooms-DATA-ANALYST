@@ -48,7 +48,7 @@ Les données se divisent en trois tables principales[cite: 18] :
 
 ---
 
-## Recommendations Strategiques
+## Recommandations Stratégiques
 1. **Investigation requise :** Identifier rapidement la cause exacte de la baisse brutale de clients, de transactions et de chiffre d'affaires observée en février 2023[cite: 18].
 2. **Fidélisation des < 30 ans :** Mettre en place un programme ciblé pour encourager cette tranche d'âge, qui a un panier moyen élevé, à acheter plus fréquemment[cite: 18].
 3. **Optimisation pour les 30–50 ans :** Développer des mécanismes de recommandation ou d'offres combinées pour inciter ce segment très actif à augmenter son panier moyen[cite: 18].
