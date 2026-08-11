@@ -1,4 +1,4 @@
-# Tableau de Bord Power BI : Stratégie Produit & Suivi de Projet (Gantt)
+# Tableau de Bord Dynamique avec Power BI pour visualiser l'avancement de projets
 
 ## 📌 À propos du projet
 
