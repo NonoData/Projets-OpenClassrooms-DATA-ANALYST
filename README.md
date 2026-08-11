@@ -8,7 +8,7 @@ Chaque projet illustre une compétence métier clé : analyse statistique, data 
 ## 🧰 Stack & Outils
 
 **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
-**SQL** (MySQL, PostgreSQL)  
+**SQL** (MySQL)  
 **Power BI** (DAX, Modèle en étoile, UX/UI)    
 **DBT / Snowflake**  
 **Excel**  
