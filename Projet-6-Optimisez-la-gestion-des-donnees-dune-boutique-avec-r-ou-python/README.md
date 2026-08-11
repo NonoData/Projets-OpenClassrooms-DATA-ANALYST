@@ -1,93 +1,93 @@
 # 🍷 Bottleneck - Analyse des Ventes et Gestion des Stocks
 
-## 📌 Context & Overview
-**Bottleneck** is a prestigious merchant specializing in fine wines and spirits. As the business grows both online and offline, unifying sales and inventory data has become essential for operational decision-making and strategic planning.
+## 📌 Contexte & Vue d'ensemble
+**Bottleneck** est un marchand prestigieux spécialisé dans les vins fins et les spiritueux. Face au développement des activités en ligne et en magasin, l'unification des données de ventes et de stocks est devenue essentielle pour la prise de décision opérationnelle et la planification stratégique.
 
-This project delivers an in-depth exploratory data analysis (EDA), data cleaning, model mapping, and sales/inventory consolidation based on data extracted as of **October 31, 2024**.
-
----
-
-## 🎯 Strategic Objectives & Core Challenges
-The primary goal is to provide reliable, actionable business reporting to executive management. Key challenges include:
-
-1. **Data Unification & Reconciliation**: Linking offline management systems (ERP) with e-commerce data (CMS Web) through an intermediary mapping table.
-2. **Data Governance & Quality Audit**: Identifying and fixing data entry anomalies (negative stock/prices, unlinked SKUs, incorrect pricing ratios).
-3. **Revenue & Product Portfolio Analysis**: Evaluating revenue performance, understanding product distribution (core range vs. prestige/outliers), and measuring category margins.
-4. **Inventory & Stock Optimization**: Detecting overstock situations, evaluating stock coverage (months of stock), and accounting for seasonal variations (e.g., year-end holiday sales peaks).
+Ce projet propose une analyse exploratoire approfondie des données (EDA), un nettoyage des données, un rapprochement de modèles ainsi qu'une consolidation des ventes et des stocks basée sur les données extraites au **31 octobre 2024**.
 
 ---
 
-## 📊 Datasets & Architecture
+## 🎯 Objectifs Stratégiques & Défis Majeurs
+L'objectif principal est de fournir un reporting d'activité fiable et exploitable à la direction générale. Les principaux défis comprennent :
 
-The analysis relies on three core data sources:
+1. **Unification & Rapprochement des Données** : Associer les systèmes de gestion hors ligne (ERP) aux données e-commerce (CMS Web) via une table de liaison intermédiaire.
+2. **Gouvernance des Données & Audit Qualité** : Identifier et corriger les anomalies de saisie (stocks/prix négatifs, SKU non liés, ratios de prix incorrects).
+3. **Analyse du Chiffre d'Affaires & du Portefeuille Produits** : Évaluer la performance des ventes, comprendre la répartition de l'offre (gamme principale vs produits prestige/outliers) et mesurer les marges par catégorie.
+4. **Optimisation des Stocks & de l'Inventaire** : Détecter les situations de surstock, évaluer la couverture des stocks (mois de stock) et prendre en compte les variations saisonnières (ex. pics de ventes de fin d'année).
 
-| Dataset | Observations | Variables | Description | Key Fields |
+---
+
+## 📊 Jeux de Données & Architecture
+
+L'analyse repose sur trois sources de données principales :
+
+| Jeu de données | Observations | Variables | Description | Champs clés |
 | :--- | :--- | :--- | :--- | :--- |
-| **ERP** | 825 | 6 | Internal Enterprise Resource Planning system data | `product_id`, `price`, `purchase_price`, `stock_quantity`, `stock_status`, `onsale_web` |
-| **WEB** | 1,513 | 29 | E-commerce web shop extraction | `sku`, `total_sales`, `post_date`, `product_type`, `post_title` |
-| **Liaison** | 825 | 2 | Hand-crafted mapping table linking physical and online products | `product_id`, `id_web` |
+| **ERP** | 825 | 6 | Données du système de gestion d'entreprise interne | `product_id`, `price`, `purchase_price`, `stock_quantity`, `stock_status`, `onsale_web` |
+| **WEB** | 1 513 | 29 | Extraction de la boutique en ligne e-commerce | `sku`, `total_sales`, `post_date`, `product_type`, `post_title` |
+| **Liaison** | 825 | 2 | Table de correspondance manuelle liant produits physiques et en ligne | `product_id`, `id_web` |
 
-### Data Integration Pipeline
+### Pipeline d'Intégration des Données
 ```
 +------------------+         +--------------------+         +------------------+
-|   ERP Dataset    | ------> |   Liaison Table    | <------ |   Web Dataset    |
+|   Dataset ERP    | ------> |  Table de Liaison  | <------ |   Dataset WEB    |
 | (product_id [PK])|         |(product_id, id_web)|         |    (sku [PK])    |
 +------------------+         +--------------------+         +------------------+
 ```
-* **ERP ↔ Liaison**: 100% data retention (825 items).
-* **Consolidated Web Integration (Inner Join)**: Filtered down to 714 active online references to analyze live e-commerce performance.
+* **ERP ↔ Liaison** : 100 % de conservation des données (825 articles).
+* **Intégration Web Consolidation (Inner Join)** : Filtré à 714 références en ligne actives pour analyser les performances e-commerce en direct.
 
 ---
 
-## 🧹 Data Quality & Feature Engineering
+## 🧹 Qualité des Données & Inscription de Variables (Feature Engineering)
 
-### Data Cleaning & Audit Highlights
-* **Negative Value Corrections**: Neutralized negative prices and stock quantities.
-* **Integrity Checks**: Realigned `stock_status` with actual stock counts.
-* **Web De-duplication**: Removed duplicate web records, empty metadata columns, time-zone duplicates (GMT), and unlinked SKUs.
-* **Critical Pricing Anomaly Detected**: 
-  * *Product ID 4355*: Purchase Price = **€77.48 HT** vs. Selling Price = **€10.54 HT** (Urgent correction required).
-* **Unlinked Catalog Items**: Identified 111 products present in ERP/Liaison but not live on the web store, requiring business arbitration (online release vs. clearance).
+### Points Forts du Nettoyage & de l'Audit
+* **Correction des Valeurs Négatives** : Neutralisation des prix et quantités de stock négatifs.
+* **Contrôles d'Intégrité** : Réalignement du `stock_status` avec le comptage réel des stocks.
+* **Déduplication Web** : Suppression des doublons web, des colonnes de métadonnées vides, des doublons de fuseaux horaires (GMT) et des SKU non liés.
+* **Anomalie de Prix Critique Détectée** : 
+  * *ID Produit 4355* : Prix d'achat = **77,48 € HT** vs Prix de vente = **10,54 € HT** (Correction urgente requise).
+* **Articles du Catalogue Non Liés** : Identification de 111 produits présents dans l'ERP/Liaison mais non publiés sur le site web, nécessitant un arbitrage commercial (mise en ligne vs déstockage).
 
-### Feature Engineering
-* **Chiffre d'Affaires (CA / Revenue)**: `total_sales * price` (€143,680 total recorded).
-* **Inventory Value**: Total physical stock valuation (€277,328.07 across 16,740 items).
-* **Margin Rate**: Profit margin evaluation across product categories.
-* **Z-Score Outlier Detection**: Statistical detection of non-standard price points.
-
----
-
-## 📈 Key Insights & Business Findings
-
-### 1. Pricing Structure & "Prestige" Segment
-* **Core Range**: Median bottle price is **€24.00**, with 50% of the catalog priced between **€14.00 and €42.00**.
-* **Prestige Outliers**: Statistical outliers (via IQR and Z-Score) were validated by domain experts as high-end Grand Crus, vintage Champagnes, and rare spirits (e.g., *Egly-Ouriet Grand Cru Millésime 2008* at **€225.00**, *Frapin VIP XO Cognac* at **€176.00*).
-
-### 2. Revenue & Sales Concentration (Pareto Analysis)
-* **Revenue**: 80% of total revenue is generated by **60% of references (433 items)**.
-* **Volume**: 80% of sales volume is driven by **61% of references (432 items)**.
-* *Takeaway*: Healthy sales distribution without over-reliance on a single bestseller.
-
-### 3. Margin Performance
-* **Highest Margins**: Spirits (Cognac, Whisky, Gin) show top profitability (>75-80%).
-* **Core Business**: Wine maintains a solid margin of **61.5%**.
-* **Loss Leaders / Entry Items**: Champagne and Olive Oil show lower margin rates.
-
-### 4. Correlation Analysis
-* **Price vs. Sales (-0.52)**: Strong negative correlation — higher prices lead to lower unit sales.
-* **Stock vs. Sales (+0.44)**: Moderate positive correlation — inventory levels align well with demand.
-* **Stock vs. Price (-0.11)**: No significant relationship — unit price does not dictate stock holding strategy.
+### Variables Créées (Feature Engineering)
+* **Chiffre d'Affaires (CA)** : `total_sales * price` (143 680 € enregistrés au total).
+* **Valeur de l'Inventaire** : Valorisation totale du stock physique (277 328,07 € répartis sur 16 740 articles).
+* **Taux de Marge** : Évaluation du taux de marge brute par catégorie de produits.
+* **Détection d'Outliers par Z-Score** : Détection statistique des points de prix atypiques.
 
 ---
 
-## 🚀 Actionable Recommendations
+## 📈 Enseignements Clés & Constats Commerciaux
 
-1. **Data Governance & System Controls**:
-   * Implement input constraints in the ERP to prevent negative prices or quantities.
-   * Automate margin checks to flag negative margins immediately upon SKU creation.
-2. **Commercial & Pricing Adjustments**:
-   * Correct Product ID 4355 pricing error immediately.
-   * Decide on the 111 offline items (publish to web or clear inventory).
-3. **Inventory Management**:
-   * Rebalance high stock levels on low-turnover vintage Champagnes while anticipating Q4 holiday sales demand.
-   * Expand tracking beyond a single-month snapshot to account for annual seasonality.
+### 1. Structure des Prix & Segment "Prestige"
+* **Gamme Principale** : Le prix médian d'une bouteille est de **24,00 €**, avec 50 % du catalogue dont le prix est compris entre **14,00 € et 42,00 €**.
+* **Valeurs Atypiques (Prestige)** : Les outliers statistiques (via IQR et Z-Score) ont été validés par les experts métier comme étant des Grands Crus haut de gamme, des Champagnes millésimés et des spiritueux rares (ex. *Egly-Ouriet Grand Cru Millésime 2008* à **225,00 €**, *Frapin VIP XO Cognac* à **176,00 €**).
+
+### 2. Concentration du CA & des Ventes (Analyse de Pareto)
+* **Chiffre d'Affaires** : 80 % du chiffre d'affaires total est généré par **60 % des références (433 articles)**.
+* **Volume** : 80 % du volume des ventes est porté par **61 % des références (432 articles)**.
+* *Bilan* : Une répartition saine des ventes sans dépendance excessive à un seul best-seller.
+
+### 3. Performance des Marges
+* **Marges les plus Élevées** : Les spiritueux (Cognac, Whisky, Gin) affichent la meilleure rentabilité (>75-80 %).
+* **Cœur de Métier** : Le vin conserve une marge solide de **61,5 %**.
+* **Produits d'Appel / Entrée de Gamme** : Le Champagne et l'Huile d'Olive présentent des taux de marge plus faibles.
+
+### 4. Analyse de Corrélation
+* **Prix vs Ventes (-0,52)** : Forte corrélation négative — un prix plus élevé entraîne une baisse des ventes unitaires.
+* **Stock vs Ventes (+0,44)** : Corrélation positive modérée — le niveau des stocks est bien aligné sur la demande.
+* **Stock vs Prix (-0,11)** : Aucune relation significative — le prix unitaire ne dicte pas la stratégie de détention des stocks.
+
+---
+
+## 🚀 Recommandations Actionnables
+
+1. **Gouvernance des Données & Contrôles Système** :
+   * Mettre en place des contraintes de saisie dans l'ERP pour empêcher les prix ou quantités négatifs.
+   * Automatiser les contrôles de marge pour signaler immédiatement les marges négatives lors de la création de SKU.
+2. **Ajustements Commerciaux & Tarifaires** :
+   * Corriger immédiatement l'erreur de prix sur l'ID Produit 4355.
+   * Statuer sur les 111 articles hors ligne (publication sur la boutique en ligne ou liquidation des stocks).
+3. **Gestion des Stocks** :
+   * Rééquilibrer les niveaux de stock élevés sur les Champagnes millésimés à faible rotation, tout en anticipant la forte demande des fêtes de fin d'année (Q4).
+   * Élargir le suivi au-delà d'un instantané mensuel unique pour prendre en compte la saisonnalité annuelle.
