@@ -70,4 +70,4 @@ Je suis **Data Analyst**, spécialisée en :
 
 ## 📬 Contact
 
- <a href="https://www.linkedin.com/in/arnaud-meloen/" target="_blank" rel="noopener noreferrer">**LinkedIn**</a> 
+ <a href="https://www.linkedin.com/in/arnaud-meloen/" target="_blank" rel="noopener noreferrer">**Mon LinkedIn**</a> 
