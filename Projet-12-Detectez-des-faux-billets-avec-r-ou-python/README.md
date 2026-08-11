@@ -54,29 +54,6 @@ Pour chaque billet, 6 dimensions géométriques sont mesurées  :
 
 ---
 
-## 🏆 Modèle Final et Performances
-
-### Comparaison des Modèles (Sur Jeu de Test - 300 billets)
-
-| Modèle | Accuracy | Précision (Faux) | Recall (Faux) | F1-Score (Faux) | Statut |
-| :--- | :---: | :---: | :---: | :---: | :--- |
-| **Random Forest** | **0,9900** | **0,9899** | **0,9800** | **0,9849** | **Retenu**  |
-| **Régression Logistique** | 0,9900 | 0,9899 | 0,9800 | 0,9849 | Égalité  |
-| **K-means** (non supervisé) | 0,9867 | 0,9800 | 0,9800 | 0,9800 | Évalué  |
-| **KNN** | 0,9833 | 0,9798 | 0,9700 | 0,9749 | En retrait  |
-
-> **Pourquoi le Random Forest a-t-il été retenu ?**
-> Le Random Forest et la Régression Logistique obtiennent des résultats identiques . Le **Random Forest** a été sélectionné car il ne nécessite pas de standardisation préalable des données , s'avère très robuste face à d'éventuelles dérives futures des données , et fournit une interprétabilité directe via l'importance des variables  (`length` compte pour ~50 % et `margin_low` pour ~31 % de la décision ).
-
-### Optimisation Métier du Seuil de Décision
-Afin d'atteindre l'objectif zéro faux billet manqué , le seuil de probabilité de classification a été optimisé  :
-* **Seuil standard (0,50)** : Recall Faux = 0,970 
-* **Seuil optimisé (0,80)** : **Recall Faux = 1,000** | **Précision Faux = 0,952** 
-
-👉 **Résultat** : Un billet n'est classé comme « Vrai » que si le modèle en est certain à **80 % au moins** . **100 % des faux billets sont interceptés** sur le jeu de test .
-
----
-
 ## 🚀 Applications & Déploiement
 
 Le projet comporte deux interfaces utilisateur pour exécuter les prédictions en production :
