@@ -4,7 +4,7 @@
 
 Ce projet consiste en une analyse exploratoire et comparative du profil sociodémographique des étudiants inscrits aux parcours Data chez OpenClassrooms sur la période **2022 à 2025**. 
 
-L'objectif est d'étudier l'évolution des profils des étudiants (selon le genre, la tranche d'âge et la région d'origine)[cite: 17] et de mettre ces données en perspective avec les statistiques démographiques nationales françaises.
+L'objectif est d'étudier l'évolution des profils des étudiants (selon le genre, la tranche d'âge et la région d'origine) et de mettre ces données en perspective avec les statistiques démographiques nationales françaises.
 
 ---
 
