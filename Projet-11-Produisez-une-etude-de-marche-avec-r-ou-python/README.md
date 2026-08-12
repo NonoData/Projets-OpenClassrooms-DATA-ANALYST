@@ -7,7 +7,7 @@ Actuellement implantée uniquement sur le marché français, l'entreprise souhai
 
 Ce projet s'inscrit dans le cadre d'une étude de marché globale visant à analyser le potentiel d'exportation vers divers pays du monde et à identifier les marchés cibles prioritaires pour la marque.
 
----
+
 
 ## Enjeux et Objectifs Stratégiques
 
@@ -17,7 +17,7 @@ L'internationalisation d'une entreprise agroalimentaire spécialisée dans le bi
 3. **Minimiser les risques géopolitiques et opérationnels** : Sélectionner des destinations stables sur le plan politique et économique.
 4. **Segmenter le monde de manière scientifique** : Éviter les choix intuitifs en s'appuyant sur des méthodes d'analyse de données avancées (Analyse en Composantes Principales - ACP, et Clustering K-Means / CAH).
 
----
+
 
 ## Données Utilisées
 
@@ -29,7 +29,7 @@ Les données proviennent de sources officielles internationales d'une grande fia
 * **Année de référence** : 2017
 * **Couverture** : 134 pays retenus (soit 87 % de la population mondiale)
 
----
+
 
 ## 📂 Structure du Répertoire
 ```text
