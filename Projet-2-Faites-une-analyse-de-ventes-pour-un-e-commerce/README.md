@@ -1,19 +1,19 @@
-# 📌 Analyse des Ventes & Comportement Client (Rapport Mensuel)
+# 📋 Analyse des Ventes & Comportement Client (Rapport Mensuel)
 
 > **En bref :** Analyse de la dynamique commerciale d'une plateforme e-commerce révélant une hausse spectaculaire du volume de ventes mais un ralentissement du chiffre d'affaires, causé par un changement du catalogue de produits et une baisse du taux de conversion.
 
----
 
-## 💡 Quel est ce projet ?
+
+## Quel est ce projet ?
 
 Ce projet rassemble et analyse l'historique des ventes, des sessions de navigation et du comportement des utilisateurs sur la plateforme e-commerce entre mars 2019 et février 2020. Il vise à comprendre les mécanismes sous-jacents aux performances financières de l'entreprise.
 
 * **L'idée principale :** Identifier la cause du découplage entre la forte augmentation du volume de ventes physiques et le ralentissement du chiffre d'affaires (CA).
 * **À qui ça sert ?** Aux équipes de direction, à l'équipe Marketing / E-commerce et aux équipes Produit pour réajuster la stratégie d'acquisition, de pricing et d'offre catalogue.
 
----
 
-## 🎯 Quels sont les enjeux ?
+
+## Quels sont les enjeux ?
 
 * **Le problème à résoudre :** 
   * Le volume de ventes explose à partir de l'été 2019 (dépassant 25 000 ventes mensuelles début 2020), mais le chiffre d'affaires plafonne vers 700 000 € puis décline début 2020.
@@ -25,9 +25,9 @@ Ce projet rassemble et analyse l'historique des ventes, des sessions de navigati
   - Enrayer la baisse du taux de conversion globale.
   - Optimiser la stratégie d'acquisition pour attirer des profils à plus forte valeur (relance du segment High-tech / augmentation du panier moyen).
 
----
 
-## 📊 Quelles données sont utilisées ?
+
+## Quelles données sont utilisées ?
 
 * **Nature des données :** 
   * Données de transactions (nombre de ventes, montant du panier moyen, chiffre d'affaires ventilé par catégorie).
@@ -35,7 +35,7 @@ Ce projet rassemble et analyse l'historique des ventes, des sessions de navigati
 * **Périmètre temporel :** Données mensuelles suivies de mars 2019 à février 2020 (1 an de recul).
 * **Catégories de produits analysées :** *High-tech*, *Biens de consommation*, *Nourriture*.
 
----
+
 
 ## 🚀 Que contient ce projet / Quels sont les résultats ?
 
