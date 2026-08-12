@@ -1,6 +1,6 @@
 # 📋 Analyse des Ventes & Comportement Client (Rapport Mensuel)
 
-> **En bref :** Analyse de la dynamique commerciale d'une plateforme e-commerce révélant une hausse spectaculaire du volume de ventes mais un ralentissement du chiffre d'affaires, causé par un changement du catalogue de produits et une baisse du taux de conversion.
+**En bref :** Analyse de la dynamique commerciale d'une plateforme e-commerce révélant une hausse spectaculaire du volume de ventes mais un ralentissement du chiffre d'affaires, causé par un changement du catalogue de produits et une baisse du taux de conversion.
 
 
 
@@ -37,6 +37,6 @@ Ce projet rassemble et analyse l'historique des ventes, des sessions de navigati
 
 
 
-## 🚀 Que contient ce projet / Quels sont les résultats ?
+## Que contient ce projet / Quels sont les résultats ?
 
 * **Livrables :** Un rapport d'analyse visuel comportant des graphiques temporels (évolution CA vs ventes), des bar charts empilés par catégorie produit, des graphiques de corrélation et des boxplots sur l'engagement client.
