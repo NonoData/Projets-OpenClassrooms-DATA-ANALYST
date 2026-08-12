@@ -27,10 +27,10 @@ Pour répondre aux besoins spécifiques de chaque région, l'analyse classe les 
 L'accès à une eau propre et sûre est un droit humain fondamental. Pourtant, des centaines de millions de personnes en sont encore privées, entraînant de graves conséquences sanitaires et économiques .
 
 ### Les grands défis :
-* **🏥 Un enjeu de santé publique** : L'eau insalubre est directement responsable de maladies graves et de décès prévitables, en particulier chez les populations les plus vulnérables .
-* **🌍 Un enjeu de justice géographique** : Il existe de fortes disparités d'accès à l'eau entre les continents, les zones urbaines et les zones rurales .
-* **🏛️ Un enjeu de gouvernance et de stabilité** : Les projets d'infrastructure nécessitent un contexte politique stable pour être pérennes et efficaces .
-* **📊 Un enjeu d'aide à la décision** : Il est souvent difficile pour une organisation de savoir *où* investir ses ressources en priorité. Ce tableau de bord permet de croiser santé, géographie et politique pour décider de manière objective .
+* **Un enjeu de santé publique** : L'eau insalubre est directement responsable de maladies graves et de décès prévitables, en particulier chez les populations les plus vulnérables .
+* **Un enjeu de justice géographique** : Il existe de fortes disparités d'accès à l'eau entre les continents, les zones urbaines et les zones rurales .
+* **Un enjeu de gouvernance et de stabilité** : Les projets d'infrastructure nécessitent un contexte politique stable pour être pérennes et efficaces .
+* **Un enjeu d'aide à la décision** : Il est souvent difficile pour une organisation de savoir *où* investir ses ressources en priorité. Ce tableau de bord permet de croiser santé, géographie et politique pour décider de manière objective .
 
 ---
 
