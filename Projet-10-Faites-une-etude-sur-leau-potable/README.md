@@ -7,7 +7,7 @@ Ce document a été conçu pour vous expliquer clairement **ce qu'est le projet*
 
 ---
 
-## 🎯 1. Le projet
+## 1. Le projet
 
 **Drinking Water For All (DWFA)** est un projet d'analyse de données et d'aide à la décision. Il s'appuie sur la création d'un **tableau de bord interactif développé sur Power BI** .
 
@@ -22,7 +22,7 @@ Pour répondre aux besoins spécifiques de chaque région, l'analyse classe les 
 
 ---
 
-## 💡 2. Les enjeux
+## 2. Les enjeux
 
 L'accès à une eau propre et sûre est un droit humain fondamental. Pourtant, des centaines de millions de personnes en sont encore privées, entraînant de graves conséquences sanitaires et économiques .
 
@@ -34,7 +34,7 @@ L'accès à une eau propre et sûre est un droit humain fondamental. Pourtant, d
 
 ---
 
-## 🗂️ 3. Les Données Utilisées
+## 3. Les Données Utilisées
 
 Pour obtenir une vision globale et précise, nous croisons des données officielles provenant d'organisations internationales reconnues (FAO, OMS, Banque Mondiale) sur une période allant de **2000 à 2018** .
 
@@ -46,7 +46,7 @@ Pour obtenir une vision globale et précise, nous croisons des données officiel
 
 ---
 
-## 🖥️ 4. Vues du Tableau de Bord Power BI
+## 4. Vues du Tableau de Bord Power BI
 
 Le tableau de bord offre **3 échelles de lecture complémentaires**  :
 1. **Vue Mondiale** : Cartes et graphiques globaux montrant les disparités entre les continents .
@@ -55,7 +55,7 @@ Le tableau de bord offre **3 échelles de lecture complémentaires**  :
 
 ---
 
-## 🚀 5. Pourquoi Power BI ?
+## 5. Pourquoi Power BI ?
 
 Le choix de l'outil **Microsoft Power BI** s'est imposé pour deux raisons majeures  :
 * **Intégration facile** dans l'écosystème applicatif des entreprises .
