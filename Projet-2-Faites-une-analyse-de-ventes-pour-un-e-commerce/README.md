@@ -1,6 +1,6 @@
 # 📋 Analyse des Ventes & Comportement Client (Rapport Mensuel)
 
-**En bref :** Analyse de la dynamique commerciale d'une plateforme e-commerce révélant une hausse spectaculaire du volume de ventes mais un ralentissement du chiffre d'affaires, causé par un changement du catalogue de produits et une baisse du taux de conversion.
+Analyse de la dynamique commerciale d'une plateforme e-commerce révélant une hausse spectaculaire du volume de ventes mais un ralentissement du chiffre d'affaires, causé par un changement du catalogue de produits et une baisse du taux de conversion.
 
 
 
