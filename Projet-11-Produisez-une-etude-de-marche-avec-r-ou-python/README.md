@@ -1,6 +1,6 @@
-# Étude de Marché Internationale – La Poule qui Chante
+# 🐣 Étude de Marché Internationale – La Poule qui Chante
 
-## 📌 Présentation du Projet
+## Présentation du Projet
 **"La poule qui chante"** est une entreprise agroalimentaire française spécialisée dans l'élevage et la commercialisation de poulets de haute qualité, certifiés **"Poulet Agriculture Biologique"**. 
 
 Actuellement implantée uniquement sur le marché français, l'entreprise souhaite impulser une nouvelle dynamique de croissance en se développant **à l'international**.
@@ -9,7 +9,7 @@ Ce projet s'inscrit dans le cadre d'une étude de marché globale visant à anal
 
 ---
 
-## 🎯 Enjeux et Objectifs Stratégiques
+## Enjeux et Objectifs Stratégiques
 
 L'internationalisation d'une entreprise agroalimentaire spécialisée dans le bio comporte plusieurs défis majeurs :
 1. **Identifier les marchés solvables** : Trouver des pays disposant d'un pouvoir d'achat suffisant pour absorber une offre *Premium* (bio).
@@ -19,7 +19,7 @@ L'internationalisation d'une entreprise agroalimentaire spécialisée dans le bi
 
 ---
 
-## 📊 Données Utilisées
+## Données Utilisées
 
 Les données proviennent de sources officielles internationales d'une grande fiabilité :
 * **FAO (Organisation des Nations unies pour l'alimentation et l'agriculture)**
