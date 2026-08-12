@@ -22,19 +22,9 @@ L'objectif principal est de fournir un reporting d'activité fiable et exploitab
 L'analyse repose sur trois sources de données principales :
 
 | Jeu de données | Observations | Variables | Description | Champs clés |
-| : | : | : | : | : |
+
 | **ERP** | 825 | 6 | Données du système de gestion d'entreprise interne | `product_id`, `price`, `purchase_price`, `stock_quantity`, `stock_status`, `onsale_web` |
 | **WEB** | 1 513 | 29 | Extraction de la boutique en ligne e-commerce | `sku`, `total_sales`, `post_date`, `product_type`, `post_title` |
 | **Liaison** | 825 | 2 | Table de correspondance manuelle liant produits physiques et en ligne | `product_id`, `id_web` |
-
-### Pipeline d'Intégration des Données
-```
-++         +--+         ++
-|   Dataset ERP    | > |  Table de Liaison  | < |   Dataset WEB    |
-| (product_id [PK])|         |(product_id, id_web)|         |    (sku [PK])    |
-++         +--+         ++
-```
-* **ERP ↔ Liaison** : 100 % de conservation des données (825 articles).
-* **Intégration Web Consolidation (Inner Join)** : Filtré à 714 références en ligne actives pour analyser les performances e-commerce en direct.
 
 
