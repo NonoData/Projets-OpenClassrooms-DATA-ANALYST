@@ -38,7 +38,7 @@ L'accès à une eau propre et sûre est un droit humain fondamental. Pourtant, d
 
 Pour obtenir une vision globale et précise, nous croisons des données officielles provenant d'organisations internationales reconnues (FAO, OMS, Banque Mondiale) sur une période allant de **2000 à 2018** .
 
-### A. Les sources de données
+### Les sources de données
 1. **Population (FAO — 2000 à 2018)** : Permet de connaître le nombre d'habitants par pays, ainsi que la répartition entre zones urbaines et rurales .
 2. **Accès à l'eau potable (OMS — 2000 à 2017)** : Mesure la proportion de la population disposant d'un accès à une eau gérée en toute sécurité, d'un service basique ou n'ayant aucun accès .
 3. **Mortalité liée à l'eau (OMS — 2016)** : Donne le taux de mortalité et le nombre de décès dus aux services d'eau, d'assainissement et d'hygiène insalubres (WASH) .
