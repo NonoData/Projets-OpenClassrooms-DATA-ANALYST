@@ -1,13 +1,8 @@
-# DATAImmo — Création et Exploitation de la Base de Données Immobilières
+# 🏘️ Création et Exploitation de la Base de Données Immobilières
 
-[![Projet](https://img.shields.io/badge/Projet-DATAImmo-blue.svg)](#)
-[![Auteur](https://img.shields.io/badge/Auteur-Arnaud_MELOEN-orange.svg)](#)
-[![Organisation](https://img.shields.io/badge/Entreprise-Laplace_Immo-red.svg)](#)
-[![Technos](https://img.shields.io/badge/Tech-SQL%20%7C%20Relational%20DB%20%7C%20Data%20Analysis-brightgreen.svg)](#)
 
----
 
-## 📌 1. Présentation du Projet
+## Présentation du Projet
 
 **DATAImmo** est une initiative stratégique portée par le réseau immobilier national **Laplace Immo**. 
 
@@ -18,9 +13,9 @@ Pour tout nouvel utilisateur ou collaborateur n'ayant pas de contexte préalable
 2. **Concevoir un système d'information décisionnel** capable de répondre avec précision aux besoins d'analyses stratégiques locales et nationales.
 3. **Préparer le terrain pour l'innovation technologique** (notamment le développement futur de modèles d'intelligence artificielle / Machine Learning pour l'estimation automatique du prix de vente des biens).
 
----
 
-## 🎯 2. Enjeux Stratégiques et Métier
+
+## Enjeux Stratégiques et Métier
 
 Dans un marché immobilier très concurrentiel, la donnée est devenue l'actif le plus précieux pour guider la décision des acquéreurs, vendeurs et conseillers immobiliers.
 
@@ -31,9 +26,9 @@ Dans un marché immobilier très concurrentiel, la donnée est devenue l'actif l
   * **Conformité RGPD :** Suppression systématique des noms d'acquéreurs et vendeurs pour garantir l'anonymat et l'absence de données personnelles sensibles.
   * **Stratégie de sauvegarde :** Mise en place de protocoles de sauvegardes régulières (sauvegardes externes / sécurisées) pour assurer la pérennité de la base de données.
 
----
 
-## 📊 3. Origine et Nature des Données
+
+## Origine et Nature des Données
 
 La base de données rassemble et croise trois sources d'informations publiques et officielles (Open Data) :
 
@@ -41,4 +36,4 @@ La base de données rassemble et croise trois sources d'informations publiques e
 2. **INSEE (Institut National de la Statistique et des Études Économiques) :** Résultats des recensements de la population permettant d'enrichir la base avec le nombre total d'habitants par commune.
 3. **data.gouv.fr (Référentiel géographique national) :** Données administratives officielles permettant de lier chaque commune à son département et à sa région.
 
----
+
