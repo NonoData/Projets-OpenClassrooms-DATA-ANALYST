@@ -1,4 +1,4 @@
-# 💻 Projet : Requêter une base de données avec SQL
+# 💻 Requêter une base de données avec SQL
 
 Ce projet présente la méthodologie et la mise en œuvre pratique pour la conception, la création, le chargement et le requêtage d'une base de données relationnelle SQLite contenant des données d'assurance (`Contrat`) et de géographie (`Region`).
 
