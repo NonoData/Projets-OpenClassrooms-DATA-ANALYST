@@ -1,7 +1,5 @@
 # 📈 Tableau de Bord Dynamique avec Power BI pour visualiser l'avancement de projets
 
-## À propos du projet
-
 Ce projet est une solution décisionnelle et analytique développée sous **Power BI** (`.pbix`). Elle a été conçue pour offrir une **vision à 360 degrés** de la planification stratégique et opérationnelle d'un portefeuille de projets. 
 
 
