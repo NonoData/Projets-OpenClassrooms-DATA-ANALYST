@@ -23,8 +23,8 @@ L'analyse repose sur trois sources de données principales :
 
 | Jeu de données | Observations | Variables | Description | Champs clés |
 
-| **ERP** | 825 | 6 | Données du système de gestion d'entreprise interne | `product_id`, `price`, `purchase_price`, `stock_quantity`, `stock_status`, `onsale_web` |
-| **WEB** | 1 513 | 29 | Extraction de la boutique en ligne e-commerce | `sku`, `total_sales`, `post_date`, `product_type`, `post_title` |
-| **Liaison** | 825 | 2 | Table de correspondance manuelle liant produits physiques et en ligne | `product_id`, `id_web` |
+**ERP** | 825 | 6 | Données du système de gestion d'entreprise interne | `product_id`, `price`, `purchase_price`, `stock_quantity`, `stock_status`, `onsale_web` |
+**WEB** | 1 513 | 29 | Extraction de la boutique en ligne e-commerce | `sku`, `total_sales`, `post_date`, `product_type`, `post_title` |
+**Liaison** | 825 | 2 | Table de correspondance manuelle liant produits physiques et en ligne | `product_id`, `id_web` |
 
 
