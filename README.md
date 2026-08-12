@@ -52,8 +52,8 @@ ACP, clustering, scoring pays, recommandations stratégiques pour l’export.
 Clustering et régression logistique pour prédire la conformité des billets.
 
 ### **Projet 13 — Portfolio professionnel** 
-<a href="https://nonodata.github.io" target="_blank" rel="noopener noreferrer">**Mon Portfolio**</a><br>
 Structuration, documentation, storytelling, posture de consultant.
+<a href="https://nonodata.github.io" target="_blank" rel="noopener noreferrer">**Mon Portfolio**</a><br>
 
 
 
