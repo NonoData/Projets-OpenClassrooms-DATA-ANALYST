@@ -3,7 +3,7 @@
 Bienvenue sur mon portfolio GitHub. Vous trouverez ici l’ensemble de mes projets réalisés dans le cadre du parcours **Data Analyst d'Openclassrooms (titre RNCP niveau 6)**.  
 Chaque projet illustre une compétence métier clé : analyse statistique, data visualisation, modélisation, gouvernance des données, machine learning ou encore storytelling.
 
----
+
 
 ## Stack & Outils
 
@@ -14,7 +14,7 @@ Chaque projet illustre une compétence métier clé : analyse statistique, data 
 **Excel**  
 **Méthodes statistiques & ML** (ACP, clustering, régression logistique, tests statistiques)
 
----
+
 
 ## 📁 Projets
 
@@ -55,7 +55,7 @@ Clustering et régression logistique pour prédire la conformité des billets.
 ** [https://nonodata.github.io/](url) **
 Structuration, documentation, storytelling, posture de consultant.
 
----
+
 
 ## À propos
 
@@ -66,7 +66,7 @@ Je suis **Data Analyst**, spécialisée en :
 - storytelling orienté décision,  
 - optimisation des modèles de données.
 
----
+
 
 ## 📨 Contact
 
