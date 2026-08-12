@@ -6,7 +6,6 @@ Ce projet est réalisé dans le cadre des missions de l'**Organisation Nationale
 
 L'objectif principal est de concevoir un **algorithme d'apprentissage automatique (Machine Learning)** capable de différencier automatiquement un **vrai billet** d'un **faux billet** , à partir uniquement de ses **caractéristiques géométriques et dimensions physiques** (mesurées en millimètres) .
 
----
 
 ## Enjeux Métier et Stratégiques
 
@@ -14,7 +13,6 @@ Dans le domaine de la lutte contre le faux-monnayage, toutes les erreurs de clas
 * **Détecter un faux billet est la priorité absolue** : Un faux billet classé comme vrai (faux négatif) s'infiltre dans le système financier et cause un préjudice économique direct .
 * **L'enjeu clé** est donc de maximiser le **Rappel (Recall) sur la classe « Faux »** . On cherche à atteindre un score de recall proche de **1,00 (100 % de faux billets interceptés)**, quitte à rejeter quelques vrais billets.
 
----
 
 ## Données Utilisées
 
@@ -39,7 +37,6 @@ Pour chaque billet, 6 dimensions géométriques sont mesurées  :
 * **`margin_low` et `margin_up` (Marges)** : Les faux billets présentent des marges plus larges, notamment la marge inférieure (5,22 mm vs 4,12 mm pour les vrais) .
 * **`diagonal`** présente très peu de correlation linéaire avec la véracité du billet et apporte très peu de pouvoir préditctif .
 
----
 
 ## Préparation des Données & Méthodologie
 
@@ -52,7 +49,6 @@ Pour chaque billet, 6 dimensions géométriques sont mesurées  :
    * **Random Forest / Forêt Aléatoire** (supervisé) 
    * **K-means** (non-supervisé pour analyse de clusters) 
 
----
 
 ## Applications & Déploiement
 
@@ -67,7 +63,6 @@ Le projet comporte deux interfaces utilisateur pour exécuter les prédictions e
    * Interface graphique intuitive permettant l'import de fichier CSV , le réglage des paramètres et la visualisation dynamique des prédictions .
    * Prérequis : `Python 3.10+`, `pandas`, `numpy`, `joblib`, `scikit-learn`, `streamlit` .
 
----
 
 ## 📂 Structure du Répertoire
 
