@@ -1,11 +1,11 @@
-# 🎯 Portfolio Data Analyst — Arnaud MELOEN
+# Portfolio Data Analyst — Arnaud MELOEN
 
 Bienvenue sur mon portfolio GitHub. Vous trouverez ici l’ensemble de mes projets réalisés dans le cadre du parcours **Data Analyst d'Openclassrooms (titre RNCP niveau 6)**.  
 Chaque projet illustre une compétence métier clé : analyse statistique, data visualisation, modélisation, gouvernance des données, machine learning ou encore storytelling.
 
 ---
 
-## 🧰 Stack & Outils
+## Stack & Outils
 
 **Python** (Pandas, NumPy, Matplotlib, Seaborn)  
 **SQL** (MySQL)  
@@ -57,7 +57,7 @@ Structuration, documentation, storytelling, posture de consultant.
 
 ---
 
-## 🎓 À propos
+## À propos
 
 Je suis **Data Analyst**, spécialisée en :  
 - visualisation claire et accessible,  
@@ -68,6 +68,6 @@ Je suis **Data Analyst**, spécialisée en :
 
 ---
 
-## 📬 Contact
+## 📨 Contact
 
  <a href="https://www.linkedin.com/in/arnaud-meloen/" target="_blank" rel="noopener noreferrer">**Mon LinkedIn**</a> 
