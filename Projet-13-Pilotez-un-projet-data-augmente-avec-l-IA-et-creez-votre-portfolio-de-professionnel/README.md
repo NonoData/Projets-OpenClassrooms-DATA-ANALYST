@@ -6,4 +6,4 @@ Les différents documents sont utilisés pour la page suivante : [**Mon portfoli
 
 Ce projet a pour but de vous permettre de rédiger un portfolio en ligne personnalisé.
 
----
+
