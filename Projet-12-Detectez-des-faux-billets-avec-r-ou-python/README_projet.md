@@ -1,6 +1,6 @@
-# Détection de Faux Billets – Algorithme de Classification Binaire
+# 💶 Détection de Faux Billets – Algorithme de Classification Binaire
 
-## 📌 Présentation du Projet
+## Présentation du Projet
 
 Ce projet est réalisé dans le cadre des missions de l'**Organisation Nationale de Lutte Contre le Faux-Monnayage (ONCFM)**, une organisation publique chargée d'identifier les contrefaçons de billets de banque .
 
@@ -8,7 +8,7 @@ L'objectif principal est de concevoir un **algorithme d'apprentissage automatiqu
 
 ---
 
-## 🎯 Enjeux Métier et Stratégiques
+## Enjeux Métier et Stratégiques
 
 Dans le domaine de la lutte contre le faux-monnayage, toutes les erreurs de classification n'ont pas la même gravité  :
 * **Détecter un faux billet est la priorité absolue** : Un faux billet classé comme vrai (faux négatif) s'infiltre dans le système financier et cause un préjudice économique direct .
@@ -16,7 +16,7 @@ Dans le domaine de la lutte contre le faux-monnayage, toutes les erreurs de clas
 
 ---
 
-## 📊 Données Utilisées
+## Données Utilisées
 
 Le jeu de données étudié comporte **1 500 billets de banque**  :
 * **1 000 vrais billets** (`is_genuine = True`, soit 66,7 %) 
@@ -41,7 +41,7 @@ Pour chaque billet, 6 dimensions géométriques sont mesurées  :
 
 ---
 
-## 🛠️ Préparation des Données & Méthodologie
+## Préparation des Données & Méthodologie
 
 1. **Traitement des Valeurs Manquantes** : Imputation par la médiane sur la variable `margin_low` (37 valeurs manquantes) , calculée strictement sur le jeu d'entraînement pour éviter toute fuite de données (*data leakage*) .
 2. **Séparation Train / Test** : Découpage stratifié 80 / 20 (1 200 billets pour l'entraînement, 300 billets pour le test) préservant la proportion 66,7% / 33,3% .
@@ -54,7 +54,7 @@ Pour chaque billet, 6 dimensions géométriques sont mesurées  :
 
 ---
 
-## 🚀 Applications & Déploiement
+## Applications & Déploiement
 
 Le projet comporte deux interfaces utilisateur pour exécuter les prédictions en production :
 
