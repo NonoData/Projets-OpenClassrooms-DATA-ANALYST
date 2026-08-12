@@ -21,6 +21,6 @@ L'objectif principal est de fournir un reporting d'activité fiable et exploitab
 
 L'analyse repose sur trois sources de données principales :
 
-**ERP** : Données du système de gestion d'entreprise interne  <br>
-**WEB** : Extraction de la boutique en ligne e-commerce  <br>
+**ERP** : Données du système de gestion d'entreprise interne<br>
+**WEB** : Extraction de la boutique en ligne e-commerce<br>
 **Liaison** :Table de correspondance manuelle liant produits physiques et en ligne
