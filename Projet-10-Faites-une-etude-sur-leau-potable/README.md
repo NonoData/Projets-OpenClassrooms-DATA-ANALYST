@@ -5,7 +5,7 @@ Bienvenue sur le dépôt du projet **Drinking Water For All (DWFA)**.
 
 Ce document a été conçu pour vous expliquer clairement **ce qu'est le projet**, **les enjeux humanitaires et stratégiques auxquels il répond**, ainsi que **les données utilisées**, de manière simple et accessible à tous, même sans compétences techniques préalables.
 
----
+
 
 ## 1. Le projet
 
@@ -20,7 +20,7 @@ Pour répondre aux besoins spécifiques de chaque région, l'analyse classe les 
 2. **Modernisation des services** : Améliorer et pérenniser les réseaux existants (notamment face à l'urbanisation) .
 3. **Consulting gouvernemental** : Accompagner les gouvernements dans la mise en place de politiques publiques efficaces et stables .
 
----
+
 
 ## 2. Les enjeux
 
@@ -32,7 +32,7 @@ L'accès à une eau propre et sûre est un droit humain fondamental. Pourtant, d
 * **Un enjeu de gouvernance et de stabilité** : Les projets d'infrastructure nécessitent un contexte politique stable pour être pérennes et efficaces .
 * **Un enjeu d'aide à la décision** : Il est souvent difficile pour une organisation de savoir *où* investir ses ressources en priorité. Ce tableau de bord permet de croiser santé, géographie et politique pour décider de manière objective .
 
----
+
 
 ## 3. Les Données Utilisées
 
@@ -44,7 +44,7 @@ Pour obtenir une vision globale et précise, nous croisons des données officiel
 3. **Mortalité liée à l'eau (OMS — 2016)** : Donne le taux de mortalité et le nombre de décès dus aux services d'eau, d'assainissement et d'hygiène insalubres (WASH) .
 4. **Stabilité politique (Banque Mondiale — 2000 à 2018)** : Évalue la stabilité du gouvernement et la gouvernance locale .
 
----
+
 
 ## 4. Vues du Tableau de Bord Power BI
 
@@ -53,7 +53,7 @@ Le tableau de bord offre **3 échelles de lecture complémentaires**  :
 2. **Vue Continentale** : Analyse comparative des régions pour observer l'évolution de l'accès à l'eau et de la stabilité politique .
 3. **Vue Nationale / Pays** : Zoom détaillé par pays pour guider le choix parmi les 3 axes d'intervention (Création, Modernisation, Consulting) .
 
----
+
 
 ## 5. Pourquoi Power BI ?
 
@@ -61,4 +61,4 @@ Le choix de l'outil **Microsoft Power BI** s'est imposé pour deux raisons majeu
 * **Intégration facile** dans l'écosystème applicatif des entreprises .
 * **Ergonomie et simplicité d'utilisation** permettant à des décideurs non-techniciens de manipuler les cartes et graphiques de manière intuitive .
 
----
+
